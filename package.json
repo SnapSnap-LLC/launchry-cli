@@ -1,0 +1,36 @@
+{
+  "name": "launchry-cli",
+  "version": "0.1.0",
+  "description": "Launchry command line client",
+  "license": "UNLICENSED",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnapSnap-LLC/launchry-cli.git"
+  },
+  "homepage": "https://launchry.dev/install/agent.md",
+  "bin": {
+    "launchry-cli": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "dependencies": {
+    "fflate": "0.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3"
+  }
+}
